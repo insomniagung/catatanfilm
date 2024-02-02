@@ -1,15 +1,11 @@
-html {
+* {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  /* font-family: "Quicksand", "sans-serif"; */
   font-family: "JetBrains Mono", monospace;
-  background-color: #e7eaf6;
+  background: #eeeeee;
   color: #123147;
   margin: 0;
   padding: 0;
@@ -22,18 +18,26 @@ header {
 .jumbotron {
   font-size: 20px;
   padding: 60px;
-  background-color: #113f67;
+  background-image: url("/assets/image/marvel1.jpg");
+  background-size: cover;
+  background-position: center 50px;
   text-align: center;
   color: white;
 }
 
 .jumbotron h1 a {
   text-decoration: none;
-  color: #e7eaf6;
+  color: white;
+  text-shadow: 3px 5px 2px black;
+}
+
+.jumbotron p {
+  color: white;
+  text-shadow: 1px 2px 1px black;
 }
 
 nav {
-  background-color: #38598b;
+  background: #222831;
   padding: 0.5px;
 
   position: sticky;
@@ -45,9 +49,14 @@ nav a {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+
+  transition: all 0.2 ease-in-out;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
 }
 
 nav a:hover {
+  background: #393e46;
   color: white;
   font-weight: bold;
 }
@@ -77,7 +86,6 @@ main {
 
   display: flex;
   flex-flow: column nowrap;
-  /* gap: 1rem 2rem; */
   gap: 1.5rem;
 }
 
@@ -88,7 +96,7 @@ aside {
 .card {
   text-align: left;
   box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, 0.08);
-  border-radius: 1rem;
+  border-radius: 24px;
 
   padding: 50px 70px;
 }
@@ -105,18 +113,17 @@ aside {
   width: 160px;
 }
 
-table {
-  font-size: 11px;
-  border-spacing: 9px;
-  padding: 2px;
-}
-
 footer {
   padding: 20px;
   color: white;
-  background-color: #113f67;
+  background: #222831;
   text-align: center;
   font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 h1,
@@ -127,15 +134,23 @@ h4 {
 
 h2,
 h3 {
-  color: #38598b;
+  color: #393e46;
 }
 
 .feature-image {
   width: 100%;
-  max-height: 300px;
+  max-height: 570px;
   object-fit: cover;
-  object-position: center;
-  border-radius: 0.5rem;
+  object-position: center -200px;
+  border-radius: 16px;
+}
+
+.feature-image-2 {
+  width: 100%;
+  max-height: 570px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
 }
 
 .aside__section {
@@ -162,9 +177,19 @@ h3 {
     align-self: stretch;
   }
 
-  table {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .feature-image {
+    width: 100%;
+    max-height: 470px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+  }
+
+  .feature-image-2 {
+    width: 100%;
+    max-height: 470px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 16px;
   }
 }
