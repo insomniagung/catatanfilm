@@ -193,3 +193,29 @@ h3 {
     border-radius: 16px;
   }
 }
+
+@media (max-width: 400px) {
+  nav a {
+    font-size: 14.5px;
+    padding: 0.4rem 0.6rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  h1,
+  h4 {
+    font-size: 20px;
+  }
+
+  footer h4,
+  h2,
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: small;
+  }
+}
