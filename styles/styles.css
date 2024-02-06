@@ -89,6 +89,10 @@ main {
   gap: 1.5rem;
 }
 
+article {
+  align-items: center;
+}
+
 aside {
   flex: 1;
 }
@@ -110,11 +114,11 @@ aside {
 }
 
 .profile img {
-  width: 160px;
+  width: 50px;
 }
 
 footer {
-  padding: 20px;
+  padding: 3px;
   color: white;
   background: #222831;
   text-align: center;
